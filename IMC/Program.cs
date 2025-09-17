@@ -31,26 +31,44 @@
                     }
                     Console.WriteLine($"Proporcione la altura (metros) de la persona N° {count + 1}");
                     height[count] = double.Parse(Console.ReadLine());
-                    if (height[count] < 1.2 || height[count] > 2.1)
+                    if (height[count] < 0.4 || height[count] > 2.3)
                     {
                         Console.WriteLine("La altura no es un valor valido");
                         errorCount--;
                         continue;
                     }
+                    Console.WriteLine($"Proporcione el peso en kg de la persona N° {count + 1}");
+                    weight[count] = double.Parse(Console.ReadLine());
+                    if (weight[count] < 2 || weight[count] > 250)
+                    {
+                        Console.WriteLine("El peso no es un valor valido");
+                        errorCount--;
+                        continue;
+                    }
+                    Console.WriteLine($"Proporcione la edad de la persona N° {count + 1}");
+                    age[count] = int.Parse(Console.ReadLine());
+                    if (age[count] < 1 || age[count] > 110)
+                    {
+                        Console.WriteLine("La edad no es un valor valido");
+                        errorCount--;
+                        continue;
+                    }
+
                     break;
                 }
                 if (errorCount == 0)
                 {
                     Console.WriteLine("Excedio el numero de errores permitidos");
                     names[count] = "No Capturo";
-                    grades[count] = 0;
+                    height[count] = 0;
+                    weight[count] = 0;
+                    age[count] = 0;
                 }
                 count++;
             }
             count = 0;
-            double gradeSum = 0;
             int omitEntry = 0;
-            while (count < alumnCount)
+            while (count < peopleCount)
             {
                 if (names[count] == "No Capturo")
                 {
@@ -58,11 +76,10 @@
                     count++;
                     continue;
                 }
-                Console.WriteLine($"El alumno {names[count]} tiene calificacion de {grades[count]}, el alumno {(grades[count] > 7 ? "aprobo" : "reprobo")}");
-                gradeSum += grades[count];
+
                 count++;
             }
-            Console.WriteLine($"La calificacion promedio es {gradeSum / (alumnCount - omitEntry)}");
+            Console.WriteLine("La persona mas joven es: ");
 
         }
     }
