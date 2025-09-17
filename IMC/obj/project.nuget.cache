@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xsynbLig/p0=",
+  "dgSpecHash": "Drc952h1Z3Q=",
   "success": true,
-  "projectFilePath": "C:\\Users\\danay\\OneDrive\\Documentos\\POO\\IMC\\IMC.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/cesar-lpz/Documentos/Net-Projects/POO/IMC/IMC.csproj",
+  "expectedPackageFiles": [
+    "/home/cesar-lpz/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.19/microsoft.netcore.app.host.linux-x64.8.0.19.nupkg.sha512"
+  ],
   "logs": []
 }

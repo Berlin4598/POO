@@ -8,31 +8,25 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\danay\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/cesar-lpz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danay\\OneDrive\\Documentos\\POO\\IMC\\IMC.csproj",
+      "projectUniqueName": "/home/cesar-lpz/Documentos/Net-Projects/POO/IMC/IMC.csproj",
       "projectName": "IMC",
-      "projectPath": "C:\\Users\\danay\\OneDrive\\Documentos\\POO\\IMC\\IMC.csproj",
-      "packagesPath": "C:\\Users\\danay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danay\\OneDrive\\Documentos\\POO\\IMC\\obj\\",
+      "projectPath": "/home/cesar-lpz/Documentos/Net-Projects/POO/IMC/IMC.csproj",
+      "packagesPath": "/home/cesar-lpz/.nuget/packages/",
+      "outputPath": "/home/cesar-lpz/Documentos/Net-Projects/POO/IMC/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\danay\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/cesar-lpz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -51,7 +45,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -67,12 +61,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[8.0.19, 8.0.19]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
