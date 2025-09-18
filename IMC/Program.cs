@@ -1,4 +1,5 @@
-﻿using System.Timers;
+﻿using System.Linq;
+using System.Timers;
 
 namespace IMC
 {
@@ -16,8 +17,9 @@ namespace IMC
             double[] imc = new double[peopleCount];
             int[] age = new int[peopleCount];
 
+            double most_tall = 0;
+            int most_young = 0;
             int count = 0;
-
             while (count < peopleCount)
             {
                 int errorCount = 3;
@@ -33,6 +35,10 @@ namespace IMC
                     }
                     Console.WriteLine($"Proporcione la altura (metros) de la persona N° {count + 1}");
                     height[count] = double.Parse(Console.ReadLine());
+                    
+
+
+
                     if (height[count] < 0.4 || height[count] > 2.3)
                     {
                         Console.WriteLine("La altura no es un valor valido");
@@ -86,6 +92,16 @@ namespace IMC
                 }
                 count++;
             }
+            //Se calcula la persona mas joven
+            most_young = age.Min();
+            int yungest = Array.IndexOf(age, most_young);
+            string youngName = names[yungest];
+            Console.WriteLine($"La persona mas joven es: {youngName} con: {most_young} edad");
+            //se calcula la persona mas alta
+            most_tall = height.Max();
+            int index = Array.IndexOf(height, most_tall);  
+            string tallestName = names[index];             
+            Console.WriteLine($"La persona mas alta es: {tallestName} con: {most_tall} metros" );
 
             //Cacular el mayor indice de masa corporal
             for (int i = 0; i < peopleCount; i++)
@@ -112,3 +128,4 @@ namespace IMC
         }
     }
 }
+
