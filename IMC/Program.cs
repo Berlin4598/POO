@@ -105,7 +105,6 @@ namespace IMC
             most_tall = height.Max();
             int index = Array.IndexOf(height, most_tall);  
             string tallestName = names[index];             
-            Console.WriteLine("La persona mas joven es: ");
             Console.WriteLine($"La persona mas alta es: {tallestName} con: {most_tall} metros" );
 
             //Cacular el mayor indice de masa corporal
