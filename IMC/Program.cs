@@ -1,6 +1,4 @@
-﻿using System.Timers;
-
-namespace IMC
+﻿namespace IMC
 {
     internal class Program
     {
@@ -56,14 +54,8 @@ namespace IMC
                         continue;
                     }
 
-
-
-
                     break;
                 }
-
-
-
                 if (errorCount == 0)
                 {
                     Console.WriteLine("Excedio el numero de errores permitidos");
@@ -84,31 +76,10 @@ namespace IMC
                     count++;
                     continue;
                 }
+
                 count++;
             }
-
-            //Cacular el mayor indice de masa corporal
-            for (int i = 0; i < peopleCount; i++)
-            {
-                if (names[i] != "No Capturo")
-                {
-                    imc[i] = weight[i] / (height[i] * height[i]);
-                }
-            }
-
-            double maxIMC = 0;
-            string personWithMaxIMC = "";
-
-            for (int i = 0; i < peopleCount; i++)
-            {
-                if (names[i] != "No Capturo" && imc[i] > maxIMC)
-                {
-                    maxIMC = imc[i];
-                    personWithMaxIMC = names[i];
-                }
-            }
-
-            Console.WriteLine($"La persona con el mayor IMC es {personWithMaxIMC} con un IMC de {maxIMC}");
+            Console.WriteLine("La persona mas joven es: ");
         }
     }
 }
