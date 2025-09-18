@@ -19,6 +19,7 @@ namespace IMC
 
             double most_tall = 0;
             int most_young = 0;
+
             int count = 0;
             while (count < peopleCount)
             {
@@ -92,15 +93,19 @@ namespace IMC
                 }
                 count++;
             }
+          
             //Se calcula la persona mas joven
             most_young = age.Min();
             int yungest = Array.IndexOf(age, most_young);
             string youngName = names[yungest];
             Console.WriteLine($"La persona mas joven es: {youngName} con: {most_young} edad");
-            //se calcula la persona mas alta
+            
+          
+            //se calcula la persona mas alta          
             most_tall = height.Max();
             int index = Array.IndexOf(height, most_tall);  
             string tallestName = names[index];             
+            Console.WriteLine("La persona mas joven es: ");
             Console.WriteLine($"La persona mas alta es: {tallestName} con: {most_tall} metros" );
 
             //Cacular el mayor indice de masa corporal
